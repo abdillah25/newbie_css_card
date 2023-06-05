@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: rgba(195, 192, 192, 0.588);
+}
+.head {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 30px;
+  text-shadow: 0 0  10px white;
+}
+section {
+  width: 750px;
+  margin: 30px auto;
+  display: flex;
+  font-size: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section header {
+  height: 40px;
+  border-radius: 3px;
+}
+section .card .content h1 {
+  font-size: 2.12em;
+  font-weight: bold;
+}
+section .card .content p {
+  font-size: 1.8em;
+  text-align: start;
+  font-weight: 550;
+}
+.card img {
+  transform: translateY(20%);
+  width: 40px;
+  filter: drop-shadow(0px 0px 4px #f6f6f6);
+}
+.card {
+  flex-basis: 25%;
+  text-align: center;
+  padding: 2.5em;
+  margin: 1em;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.234);
+  transition: all .8s ;
+}
+
+.card .content button {
+  padding: 0.7em;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.234);
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* responsive */
+
+@media screen and (min-width: 200px) and (max-width: 750px) {
+  section {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* hover */
+.card:hover {
+  background-color: white;
+  transform: rotateY(360deg) scale(1.2);
+  z-index: 1;
+}
